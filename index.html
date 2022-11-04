@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="'Bentley Hamm', 'Nomadic Adventures Digital Studio'">
+    <meta keywords="Huskita Stud Breeding Service Akita Husky"> <!-- keywords -->
+    <meta name="description" content="Discover Huskita Stud Breeding Service: the best available stud dog based on attitude, appearance, and temperament."> <!-- 120 - 160 characters -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/style.css">
+    <title>Balboa the Huskita</title> <!-- Don't Duplicate -->
+</head>
+<body>
+    <div id="top" class="h-1px w-1px"></div>
+<!-- Global Container -->
+<div id="global" class="bg-gray-50">
+    <!-- Hero Section -->
+    <!-- @todo Better aspect ratio pic for B/G -->
+    <!-- @todo Get the color code for the blue in the logo, change text to this color -->
+    <section id="hero" class="h-screen">
+        <div class="bg-black bg-opacity-30 h-full">
+        
+        <!-- Hero Container -->
+        <div class="container max-w-6xl screen-full mx-auto px-4 py-4 ">
+            <!-- Menu/Logo Container -->
+            <nav class="flex justify-between font-bold text-white text-float">
+                <!-- Logo -->
+                <!-- Place these inside a div to stack -->
+                <img src="/images/balboa-logo.png" alt="" class="w-36">
+                <h2 class="font-alata text-3xl justify-start md:text-6xl">Balboa the Huskita</h2>
+
+                <!-- Desktop Menu - Hidden to replace with burger on mobile -->
+                <div class="hidden h-10 font-alata md:flex md:mt-6 md:space-x-8">
+                    <!-- Menu Item 1 -->
+                    <div class="group">
+                        <a href="about.html">
+                            About
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="group">
+                        <a id="socials-btn" 
+                            href="javascript:void(0)">
+                            Socials
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="group contact-btns">
+                        <a href="javascript:void(0)">
+                            Contact
+                        </a>
+                        <div class="contact-btns mx-2 group-hover:border-b group-hover:border-white"></div>
+                    </div>
+                    <!-- Menu Item 4 -->
+                    <div class="group">
+                        <a target="_blank"
+                            href="blog.html">
+                            Blog
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                    </div>
+                    <!-- Menu Item 5 -->
+                    <!-- <div class="group">
+                        <a href="#">Support</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                    </div> -->
+                </div>
+                <!-- Hamburger Button -->
+                <div class="md:hidden">
+                    <button
+                    id="menu-btn"
+                    type="button"
+                    class="z-40 block hamburger md:hidden focus:ouline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div
+                id="menu"
+                class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+                <a href="" class="text-blue-600 underline">Home</a>
+                <a href="about.html" class="hover:text-blue-600">About</a>
+                <a href="#footer" class="hover:text-blue-600">Socials</a>
+                <a href="javascript:void(0)" class="hover:text-blue-600 contact-btns">Contact</a>
+                <a target="_blank" href="blog.html" class="hover:text-blue-600">Blog</a>
+                <!-- <a href="#" class="hover:text-blue-600">Support</a> -->
+            </div>
+
+            <!-- Hero Statement -->
+            <div class="max-w-lg mb-32 p-4 font-sans text-4xl text-white uppercase md:pt-4 md:mt-24 md:mx-0 md:text-6xl text-float" data-aos="zoom-in" data-aos-duration="2000">
+                PROVIDING TOP STUD SERVICES
+                <p class="text-xl">
+                    To American Akita, Siberian Husky and Huskita owners
+                </p>
+
+
+            </div>
+
+            <!-- Subscription Sign Up -->
+            <div class="flex flex-col mt-5 md:justify-end">
+                <form
+                  action=""
+                  method="post"
+                  class="email-sign-form flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0"
+                >
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Subscribe to Balboa's Blog"
+                    class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer"
+                  />
+                  <button
+                    class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+                <div
+                  class="sub-msg text-white text-sm font-alata text-right"
+                ></div>
+              </div>
+              <!-- End sub-form -->
+        </div>
+    </div>
+    </section>
+
+    <!-- Bracket Section -->
+    <section id="bracket"> <!-- my-6 px-6 text-gray-900 md:px-4 -->
+        <!-- Bracket Container grid this shit instead -->
+        <!-- grid-12 ea col-span-4  -->
+        <!-- mobile grid-col-1 break it s=down from there -->
+        <div class="grid grid-cols-12">
+                <!-- Spacer div Balboa col Top  -->
+                <div class="h-54 w-54 col-span-4"></div>
+                <!-- Spacer div Mother col Top  -->
+                <div class="h-54 w-54 col-span-4"></div>
+
+            <!-- Puppies Column Top Position -->
+            <div class="p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4">
+                Mother 1, First Litter Puppies placeholder image
+                <img class="drop-shadow-lg" src="/images/litter-1.jpg" alt="">
+            </div>
+
+                <!-- Spacer div Balboa col above -->
+                <div class="h-54 w-54 col-span-4"></div>
+
+            <div class="p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4" id="mother-1">
+                Mother 1 Placeholder image
+                <img class="drop-shadow-lg" src="/images/mother-placeholder.jpg" alt="">
+            </div>
+            <div class="p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4">
+                Mother 1, Second Litter Puppies placeholder image
+                <img class="drop-shadow-lg" src="/images/litter-1.jpg" alt="">
+            </div>
+
+            <!-- Balboa Image -->
+            <div class="bracket-img-c-row p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4">
+                <img class="drop-shadow-lg" src="images/balboa-2.jpg" alt="">
+            </div>
+
+                <!-- Spacer div mother col center -->
+                <div class="bracket-img-c-row h-24 w-54 col-span-4"></div> 
+                <!-- Spacer div puppy col center -->
+                <div class="bracket-img-c-row h-24 w-54 col-span-4"></div> 
+                <!-- Spacer div balboa col below -->
+                <div class="h-54 w-54 col-span-4"></div>
+
+
+            <div class="p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4" id="mother-2">
+                Mother 2 Placeholder image
+                <img class="drop-shadow-lg" src="/images/mother-placeholder.jpg" alt="">
+            </div>
+            <div class="p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4">
+                Mother 2, First Litter Puppies placeholder image
+                <img class="drop-shadow-lg" src="/images/litter-1.jpg" alt="">
+            </div>
+
+                <!-- Spacer div balboa col bottom -->
+                <div class="h-54 w-54 col-span-4"></div>
+                <!-- Spacer div mother col bottom -->
+                <div class="h-54 w-54 col-span-4"></div>
+
+            <div class="p-2 md:p-6 lg:p-12 h-54 w-54 col-span-4">
+                Mother 2, Second Litter Puppies placeholder image
+                <img class="drop-shadow-lg" src="/images/litter-1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Chronicle Section -->
+    <section id="publications" class="h-fit bg-zinc-700">
+        <h2 class="uppercase text-3xl font-bold text-slate-100 text-center pt-24" >The Balboa Chronicle</h2>
+
+            <div id="default-carousel duration-5000" class="relative mx-auto max-w-6xl p-32" data-carousel="slide"> <!--  -->
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative rounded-lg h-36 md:h-[66rem]"> <!-- h-32 h-96 -->
+                    <!-- Item 1 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="">
+                        <img src="images/balboa-1.jpg" class="carousel-img bg-auto" alt="...">
+                        <span class="absolute top-1/2 left-1/2 md:text-4xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-xs dark:text-gray-800">
+                            Balboa's first time on a boat: a new adventure!
+                            <br>
+                            <span class="hidden text-lg md:block">
+                                ...imagine the wind in your hair and the sun on your face as you cruise across the water. Now, imagine that feeling times a hundred – that's how Balboa felt when he first got on a boat!
+                            </span>
+                        </span>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+                        <img src="images/blog-2-pic-1.png" class="carousel-img" alt="...">
+                        <span class="absolute top-1/2 left-1/2 md:text-4xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-xs dark:text-gray-800">
+                            Balboa's Road Trip Adventures: A Dog's-Eye View
+                            <br> 
+                            <span class="hidden text-lg md:block">
+                                Anticipating the truck accelerating to highway speeds, Balboa promptly stuck his head out the rear driver's side window...He's got a need for speed
+                            </span>
+                        </span>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                        <img src="images/balboa-3.jpg" class="carousel-img" alt="...">
+                        <span class="absolute top-1/2 left-1/2 md:text-4xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-xs dark:text-gray-800">
+                            LOREM IPSUM
+                            <br> 
+                            <span class="hidden text-lg md:block">
+                                
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+                <!-- Subscription Sign Up -->
+            <div class="flex flex-col mt-5 md:justify-end">
+                <form
+                  action=""
+                  method="post"
+                  class="email-sign-form flex flex-col mt-5 space-y-4 md:justify-end md:flex-row md:space-y-0"
+                >
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Subscribe to Balboa's Blog"
+                    class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none hover:cursor-pointer"
+                  />
+                  <button
+                    class="px-5 py-3 text-xs text-white bg-black border border-zinc-600 hover:bg-zinc-800 hover:text-white duration-500"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+                <div
+                  class="sub-msg text-white text-sm font-alata text-right"
+                ></div>
+              </div>
+              <!-- End sub-form -->
+            </div>
+    </section>
+
+    <!-- Pedigree & Awards Section -->
+    <section id="pedigree">
+        <div class="container max-w-6xl mx-auto mt-40 my-32 px-6 text-gray-900 md:pt-0 md:px-0">
+            <!-- Creations Header Section -->
+            <div class="flex justify-center mb-20 md:justify-between">
+                <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+                    Awards
+                </h2>
+                <!-- Top Button Only on MD & larger -->
+                <!-- @todo Probably don't need this button -->
+                <!-- <button class="btn hidden md:block">See All</button> -->
+            </div>
+            <!-- Items Container -->
+            <div class="item-container">
+                <!-- Item 1 -->
+                <div class="item group shadow-2xl">
+                    <!-- Desktop Image -->
+                    <img
+                    src="/images/desktop/image-deep-earth.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image -->
+                    <img
+                    src="/images/mobile/image-deep-earth.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text -->
+                    <h5>Deep Earth</h5>
+
+                </div>
+                <!-- Item 2 -->
+                <div class="item group shadow-2xl">
+                    <!-- Desktop Image -->
+                    <img
+                    src="/images/desktop/image-night-arcade.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image -->
+                    <img
+                    src="/images/mobile/image-night-arcade.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text -->
+                    <h5>Night Arcade</h5>
+
+                </div>
+                <!-- Item 3 -->
+                <div class="item group shadow-2xl">
+                    <!-- Desktop Image -->
+                    <img
+                    src="/images/desktop/image-soccer-team.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image -->
+                    <img
+                    src="/images/mobile/image-soccer-team.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text -->
+                    <h5>Soccer Team VR</h5>
+
+                </div>
+                <!-- Item 4 -->
+                <!-- <div class="item group shadow-2xl">
+                    <!-- Desktop Image - ->
+                    <img
+                    src="/images/desktop/image-grid.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image - ->
+                    <img
+                    src="/images/mobile/image-grid.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -- >
+                    <div class="item-gradient"></div>
+                    <!-- Item Text - ->
+                    <h5>The Grid</h5>
+                </div> -->
+
+
+        </div>
+            <!-- Items Container 2 -->
+            <div class="item-container mt-10">
+                <!-- Item 1 -->
+                <div class="item group shadow-2xl">
+                    <!-- Desktop Image -->
+                    <img
+                    src="/images/desktop/image-from-above.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image -->
+                    <img
+                    src="/images/mobile/image-from-above.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text -->
+                    <h5>From Above VR</h5>
+
+                </div>
+                <!-- Item 2 -->
+                <div class="item group shadow-2xl">
+                    <!-- Desktop Image -->
+                    <img
+                    src="/images/desktop/image-pocket-borealis.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image -->
+                    <img
+                    src="/images/mobile/image-pocket-borealis.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text -->
+                    <h5>Aurora Borealis</h5>
+
+                </div>
+                <!-- Item 3 -->
+                <div class="item group shadow-2xl">
+                    <!-- Desktop Image -->
+                    <img
+                    src="/images/desktop/image-curiosity.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image -->
+                    <img
+                    src="/images/mobile/image-curiosity.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient -->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text -->
+                    <h5>The Curiosity</h5>
+
+                </div>
+                <!-- Item 4 -->
+                <!-- <div class="item group shadow-2xl">
+                    <!-- Desktop Image - ->
+                    <img
+                    src="/images/desktop/image-fisheye.jpg" alt="" class="hidden shadow-2xl w-full duration-500 transition-all md:block group-hover:scale-110">
+                    <!-- Mobile Image - ->
+                    <img
+                    src="/images/mobile/image-fisheye.jpg" alt="" class="md:hidden shadow-2xl w-full">
+                    <!-- Item Gradient - ->
+                    <div class="item-gradient"></div>
+                    <!-- Item Text - ->
+                    <h5>Make It Fisheye</h5>
+                </div> -->
+        </div>
+        <!-- Bottom Button Container -->
+        <!-- @todo Probably don't need this button -->
+        <!-- <div class="flex justify-center mt-10 md:hidden">
+            <button class="btn w-full md:hidden">See All</button>
+        </div> -->
+    </section>
+
+    <!-- Breeding Details -->
+    <section id="breeding" 
+        class=" bg-zinc-700 ">
+        <div class="grid grid-cols-1 gap-y-6 justify-center py-24 px-4 h-screen md:h-fit md:grid-cols-2 md:min-h-screen  bg-black bg-opacity-30">
+        <div class="">
+            <h2 class="uppercase text-4xl font-alata text-float font-bold text-slate-100" data-aos="fade-right" data-aos-duration="2000" >Breeding Details</h2>
+        </div>
+        <div class=""></div>
+        <div class=""></div>
+        
+        <div class="place-self-end font-alata text-float text-2xl text-slate-100" data-aos="fade-left" data-aos-duration="2000">  
+            Balboa will travel to your location of choice, upon where I will oversee the breeding session.
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-black">
+        <!-- Container -->
+        <div class="container max-w-7xl py-10 mx-auto flex flex-col">
+            <!-- Footer Flex Container -->
+            <div class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:mx-6 md:space-y-0 md:justify-between md:items-start">
+            <!-- Logo -->
+            <!-- <img src="/images/balboa-logo.png" alt="" class="w-36"> -->
+            <!-- Menu & Logo Container -->
+            <div class="flex flex-col items-center space-y-8 md:flex-row md:items-start md:space-y-4">
+                <!-- Logo -->
+              <div>
+                <a href="#top">
+                  <img
+                    src="/images/balboa-logo.png"
+                    alt=""
+                    class="w-36 md:mx-4"
+                  />
+                </a>
+              </div>
+                <!-- Logo Title -->
+                <div>
+                    <h2 class="font-alata text-3xl justify-start text-white md:text-6xl">Balboa the Huskita</h2>
+
+                    <!-- Menu Container -->
+                <div class="flex flex-col items-center space-y-4 font-bold text-white md:ml-8 md:flex-row md:space-y-0 md:space-x-6">
+                    <!-- Item 1 -->
+                    <!-- <div class="group h-10 text-center cursor-default">
+                        <a href="#">About</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+                    <!-- Item 2 -->
+                    <div class="group h-16 text-center cursor-default">
+                        <a href=""class="cursor-default">Contact Info</a>
+                        <div class="text-white">
+                            (403)888-3199
+                            <br>
+                            balboathehuskita@gmail.com
+                        </div>
+                        <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="group h-16 text-center cursor-default">
+                        <a href="" class="cursor-default">Located In</a>
+                        <div class="text-white">
+                            Beautiful
+                            <br>
+                            Calgary, AB
+                        </div>
+                        <div class="mx-4 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <button class="contact-btns px-5 py-3 text-xs text-white bg-black border border-color-zinc-600 hover:bg-zinc-800 hover:text-white duration-500">
+                        Contact Form
+                    </button>
+                    <!-- Item 4 -->
+                    <!-- <div class="group h-10 text-center pb-5">
+                        <a href="#">Events ???</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+                    <!-- Item 5 -->
+                    <!-- <div class="group h-10 text-center">
+                        <a href="#">Support</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+                </div>
+                </div>
+            </div>
+            <!-- Social & Copy Container -->
+            <div class="flex flex-col pr- items-end justify-between space-y-4 text-gray-500">
+                <!-- icons Container -->
+                <div class="flex items-center justify-center mx-auto space-x-12 md:justify-end">
+                    <!-- Icon 1 -->
+                    <div class="group h-8 mb-4">
+                        <a target="_blank" href="https://instagram.com/balboathehuskita/">
+                            <img src="/images/icon-instagram.svg" alt="" class="h-12 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Icon 2 -->
+                    <div class="group h-8 mb-4">
+                        <a target="_blank" href="https://facebook.com/profile.php?id=100084045993047">
+                            <img src="/images/icon-facebook.svg" alt="" class="h-12 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+                    <!-- Icon 3 -->
+                    <!-- <div class="group h-8">
+                        <a target="_blank" href="#">
+                            <img src="/images/icon-instagram.svg" alt="" class="h-6 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+                    <!-- Icon 4 -->
+                    <!-- <div class="group h-8">
+                        <a target="_blank" href="#">
+                            <img src="/images/icon-pinterest.svg" alt="" class="h-6 mb-2">
+                        </a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div> -->
+                </div>
+
+                <!-- Copyright -->
+                <div class="font-bold text-center px-3">
+                    2022 &copy; Balboa the Huskita
+                    <br>
+                    All Rights Reserved
+                    <br>
+                    <div class="group h-16 text-center cursor-pointer">
+                        <a target="_blank" class="text-xs" href="https://nomadicadventuresstudio.com/">built & powered by
+                            <br>
+                            summit web creations
+                        </a>
+                        <div class="mx-12 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Socials Modal -->
+        <div class="hidden absolute z-50" id="socials-wrapper"> <!-- hidden -->
+            <div class="relative">
+                <div class="fixed inset-0 z-10 overflow-y-auto">
+                    <div class="flex min-h-full items-start justify-center p-4 text-center sm:items-center sm:p-0">
+                        <div class="bg-black p-4 transition-opacity"> <!-- Socials container -->
+                             <!-- Close Button -->
+                        <div class="flex justify-end">
+                            <button id="socials-close-btn" type="button" class=" bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500">
+                                <span class="sr-only">Close menu</span>
+                                <!-- X Icon -->
+                                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div> <!-- End Close Button -->
+    
+                        <!-- Socials Modal Hidden until clicked -->
+                        <div>      
+                            <span id="socials-dots"></span>
+                            <div id="" class="text-white h-32 w-96 z-20">
+                                <div id="socials-modal" class="flex px-20 pt-8 pb-4 justify-between items-center">
+        
+                                    <!-- Icon 1 -->
+                                    <div class="group">
+                                        <a target="_blank" href="https://instagram.com/balboathehuskita/">
+                                            <img src="/images/icon-instagram.svg" alt="" class="h-12 mb-2">
+                                        </a>
+                                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                    </div>
+                                    <!-- Icon 2 -->
+                                    <div class="group">
+                                        <a target="_blank" href="https://facebook.com/profile.php?id=100084045993047">
+                                            <img src="/images/icon-facebook.svg" alt="" class="h-12 mb-2">
+                                        </a>
+                                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                    </div>
+                                    <!-- Icon 3 -->
+                                    <!-- <div class="group h-8">
+                                        <a target="_blank" href="#">
+                                            <img src="/images/icon-instagram.svg" alt="" class="h-6 mb-2">
+                                        </a>
+                                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                    </div> -->
+                                    
+                                </div>
+                            </div> <!-- Socials-->                            
+                        </div>                        
+                        </div> <!-- End Socials container -->
+                    
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Socials Modal Wrapper -->
+
+        <!-- Contact From Modal -->
+      <div class="hidden absolute z-50" id="contact-form-wrapper">
+        <!-- hidden -->
+        <div class="relative">
+          <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div
+              class="flex min-h-full items-start justify-center p-4 text-center sm:items-center sm:p-0"
+            >
+              <div class="bg-gray-900 p-4 bg-opacity-85 transition-opacity">
+                <!-- Form container -->
+                <!-- Close Button -->
+                <div class="flex justify-end">
+                  <button
+                    id="contact-us-close-btn"
+                    type="button"
+                    class="bg-black text-white p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-slate-400/20 border border-color-zinc-600 duration-500"
+                  >
+                    <span class="sr-only">Close menu</span>
+                    <!-- X Icon -->
+                    <svg
+                      class="h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <!-- End Close Button -->
+
+                <!-- Contact Form Insert, Hidden until clicked -->
+                <div>
+                  <span id="contact-dots"></span>
+                  <div id="" class="h-auto w-96 mx-auto my-auto px-auto z-20">
+                    <form id="contact-form" class="px-10 pb-4 space-y-4">
+                      <!-- Honeypot for spambots -->
+                      <input
+                        type="checkbox"
+                        name="contact_me_by_fax_only"
+                        value="1"
+                        class="user-cannot-see"
+                        tabindex="-1"
+                        autocomplete="off"
+                      />
+                      <label
+                        for="nickname"
+                        aria-hidden="true"
+                        class="user-cannot-see"
+                      >
+                        Nickname
+                        <input
+                          type="text"
+                          name="nickname"
+                          id="nickname"
+                          class="user-cannot-see"
+                          tabindex="-1"
+                          autocomplete="off"
+                      /></label>
+                      <!-- End Honeypot -->
+
+                      <input
+                        class="w-full py-2 px-3 bg-slate-400/20 text-white placeholder:text-white"
+                        name="Name"
+                        id="name"
+                        type="text"
+                        placeholder="Name"
+                        required
+                      />
+                      <br />
+                      <input
+                        class="w-full py-2 px-3 bg-slate-400/20 text-white placeholder:text-white"
+                        name="Email"
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                        required
+                      />
+                      <br />
+                      <input
+                        class="w-full py-2 px-3 bg-slate-400/20 text-white placeholder:text-white"
+                        name="Subject"
+                        id="subject"
+                        type="text"
+                        placeholder="Subject"
+                        required
+                      />
+                      <br />
+                      <textarea
+                        class="w-full bg-slate-400/20 text-white placeholder:text-white py-2 px-3"
+                        placeholder="Your message"
+                        name="Message"
+                        id="message"
+                        cols="40"
+                        rows="5"
+                        required
+                      ></textarea>
+                      <button
+                        id="submitBtn"
+                        class="w-full px-5 py-3 mb-12 text-md text-white font-bold bg-black border border-color-zinc-600 hover:bg-slate-400/20 duration-500"
+                      >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                  <!-- End of Contact Form -->
+                  <div id="error-msg" class="w-auto h-auto mx-auto">
+                    <!-- @todo Add Hidden -->
+                    <p
+                      class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100"
+                    >
+                      There was an error sending your form.
+                    </p>
+                  </div>
+                  <div id="success-msg" class="w-auto h-auto mx-auto">
+                    <!-- @todo Add Hidden -->
+                    <p
+                      class="hidden font-alata font-extrabold text-3xl text-center my-4 text-slate-100"
+                    >
+                      Your message has been sent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Form container -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Form Wrapper -->
+
+
+</div>
+<script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+<script src="https://unpkg.com/jquery@^3.6.1"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h5 {
+    @apply absolute px-6 duration-500 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
+    }
+    h6 {
+        @apply absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl
+    }
+}
+
+@layer components {
+.btn {
+    @apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white
+    }
+}
+
+.text-shadow {
+    text-shadow: 0 1px 3px #000;
+}
+
+.special-text-shadow {
+    color: #202c2d;
+text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+}
+
+.text-float {
+    text-shadow: 3px 5px 2px #474747, -40px -40px 2px rgba(206,89,55,0);
+}
+
+.item-container {
+    @apply flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+
+.item {
+    @apply relative overflow-hidden md:w-1/4;
+}
+
+.item-gradient {
+    @apply  absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:duration-500 group-hover:transition-all group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
+}
+
+.carousel-img {
+    @apply absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 bg-cover bg-gradient-to-t from-transparent to-gray-900 opacity-70;
+}
+
+#hero {
+    background-image: url('../images/balboa-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backgound-height: auto;
+    background-gradient: rgba(-180deg 0,0,0,.4)
+}
+
+#breeding {
+    background-image: url('#../images/balboa-1.jpg');
+    background-repeat:no-repeat;
+    background-scale: ;
+    background-position: center ;
+}
+
+.bracket-img-c-row {
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+@media(max-width: 576px) {
+    #hero {
+    background-image: url('../images/balboa-1.jpg');
+    background-position: center;
+    }
+}
+
+#about {
+    background-image: url('../images/balboa-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backgound-width: fit;
+    backgound-height: auto;
+    position: realtive;
+    background-attachment: fixed;
+}
+@media(max-width: 576px) {
+    #about {
+    background-image: url('../images/balboa-1.jpg');
+    background-position: center;
+    }
+}
+#blog-pg {
+    background-image: url('../images/balboa-8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backgound-width: fit;
+    backgound-height: auto;
+    position: realtive;
+    background-attachment: fixed;
+    background-gradient: rgba(-180deg 0,0,0,.4)
+}
+@media(max-width: 576px) {
+    #blog-pg {
+    background-image: url('../images/balboa-1.jpg');
+    background-position: center;
+    }
+}
+
+#breeding {
+    background-image: url('../images/balboa-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backgound-width: fit;
+    backgound-height: auto;
+    position: realtive;
+    background-attachment: fixed;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.7s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.user-cannot-see {
+    display: none;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-info {
+    margin: auto;
+}
+
+/*Accordion*/
+.accordion-item {
+    padding: 8px;
+    border: 3px solid rgb(55 65 81 / 0.5);
+}
+
+
+.accordion-item-header {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .accordion-item-header > div {
+      margin-right: 35px;
+  }
+
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: .5rem;
+    top: -0.58rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-header.active + .accordion-item-body{
+      max-height: max-content;
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  .accordion-item-body-content {
+    margin-top: 12px;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+/*End Accordion*/
+
+#score-table {
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/* iOS Mobile device images fix */
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    #pages-that-have-issues, #sections-that-have-issues {
+        background:none;
+    }
+    #pages-that-have-issues:after, #sections-that-have-issues:after  {
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        height:100vh; /* fix for mobile browser address bar appearing disappearing */
+        left:0;
+        right:0;
+        z-index:-1; /* needed to keep in the background */
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #-page:after{
+        background-image: url('./images/');
+        background-position: center top;
+    }
+    #-page:after {
+        background-image: url('./images/');
+    }
+    #-page:after {
+        background-image: url('./images/');
+    }
+    #section:after {
+        background-image: url('./images/');
+        background-position: center top;
+    }
+    #-page:after {
+        background-image: url('./images/');
+        background-position: center top;
+    }
+}
