@@ -73,7 +73,7 @@ text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
     }
 }
 
-#about {
+#about-pg {
     background-image: url('../images/balboa-5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +83,7 @@ text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
     background-attachment: fixed;
 }
 @media(max-width: 576px) {
-    #about {
+    #about-pg {
     background-image: url('../images/balboa-1.jpg');
     background-position: center;
     }
@@ -229,7 +229,7 @@ text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
     #about-pg, #blog-pg, #breeding {
         background:none;
     }
-    #pages-that-have-issues:after, #sections-that-have-issues:after  {
+    #about-pg:after, #blog-pg:after, #breeding:after  {
         content:"";
         position:fixed; /* stretch a fixed position to the whole screen */
         top:0;
@@ -243,22 +243,15 @@ text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
         -o-background-size: cover;
         background-size: cover;
     }
-    #-page:after{
-        background-image: url('./images/');
+    #about-pg:after{
+        background-image: url('./images/balboa-5.jpg');
         background-position: center top;
     }
-    #-page:after {
-        background-image: url('./images/');
+    #blog-pg:after {
+        background-image: url('./images/balboa-8.jpg');
     }
-    #-page:after {
-        background-image: url('./images/');
-    }
-    #section:after {
-        background-image: url('./images/');
-        background-position: center top;
-    }
-    #-page:after {
-        background-image: url('./images/');
+    #breeding:after {
+        background-image: url('./images/balboa-1.jpg');
         background-position: center top;
     }
 }
