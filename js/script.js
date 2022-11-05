@@ -57,7 +57,6 @@ function socialsToggle() {
 // Contact Form
 // Open Contact Form
 $('.contact-btns').click(contactToggle);
-$('.contact-btns').click(console.log('clicked'));
 
 const contactFormCloseButton = $('#contact-us-close-btn');
 const contactFormWrapper = $('#contact-form-wrapper');
