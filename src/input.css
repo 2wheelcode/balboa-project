@@ -87,7 +87,7 @@
 }
 @media (max-width: 576px) {
   #about-pg {
-    background-image: url("../images/balboa-1.jpg");
+    background-image: url("../images/balboa-9.jpg");
     background-position: center;
   }
 }
@@ -226,36 +226,34 @@
 }
 
 /* iOS Mobile device images fix */
+/* take 2 */
 @supports (-webkit-touch-callout: none) {
-  /* CSS specific to iOS devices */
-  #about-pg,
-  #blog-pg,
-  #breeding {
-    background: none;
-  }
-  #about-pg:after,
-  #blog-pg:after,
-  #breeding:after {
-    content: "";
-    position: fixed; /* stretch a fixed position to the whole screen */
-    top: 0;
-    height: 100vh; /* fix for mobile browser address bar appearing disappearing */
-    left: 0;
-    right: 0;
-    z-index: -1; /* needed to keep in the background */
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  #about-pg:after {
-    background-image: url("./images/balboa-9.jpg");
-  }
-  #blog-pg:after {
-    background-image: url("./images/balboa-8.jpg");
-  }
-  #breeding:after {
-    background-image: url("./images/balboa-5.jpg");
-  }
+    /* CSS specific to iOS devices */
+    #about-pg, #blog-pg, #breeding {
+        background:none;
+    }
+    #about-pg:after, #blog-pg:after, #breeding:after {
+        content:"";
+        position:fixed; /* stretch a fixed position to the whole screen */
+        top:0;
+        height:100vh; /* fix for mobile browser address bar appearing disappearing */
+        left:0;
+        right:0;
+        z-index:-1; /* needed to keep in the background */
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #about-pg:after{
+        background-image: url('../images/balboa-9.jpg');
+        background-position: center top;
+    }
+    #blog-pg:after {
+        background-image: url('../images/balboa-8.jpg');
+    }
+    #breeding:after {
+        background-image: url('../images/balboa-5.jpg');
+    }
 }
