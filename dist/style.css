@@ -1802,8 +1802,7 @@ h6 {
   }
 
   #about-pg:after{
-    background-image: url('./images/balboa-5.jpg');
-    background-position: center top;
+    background-image: url('./images/balboa-1.jpg');
   }
 
   #blog-pg:after {
@@ -1811,8 +1810,7 @@ h6 {
   }
 
   #breeding:after {
-    background-image: url('./images/balboa-1.jpg');
-    background-position: center top;
+    background-image: url('./images/balboa-5.jpg');
   }
 }
 

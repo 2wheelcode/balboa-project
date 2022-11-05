@@ -244,14 +244,12 @@ text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
         background-size: cover;
     }
     #about-pg:after{
-        background-image: url('./images/balboa-5.jpg');
-        background-position: center top;
+        background-image: url('./images/balboa-1.jpg');
     }
     #blog-pg:after {
         background-image: url('./images/balboa-8.jpg');
     }
     #breeding:after {
-        background-image: url('./images/balboa-1.jpg');
-        background-position: center top;
+        background-image: url('./images/balboa-5.jpg');
     }
 }
