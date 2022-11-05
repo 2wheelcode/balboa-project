@@ -226,7 +226,7 @@ text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
 /* iOS Mobile device images fix */
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
-    #pages-that-have-issues, #sections-that-have-issues {
+    #about-pg, #blog-pg, #breeding {
         background:none;
     }
     #pages-that-have-issues:after, #sections-that-have-issues:after  {
