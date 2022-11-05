@@ -1492,11 +1492,14 @@ h6 {
 
 .special-text-shadow {
   color: #202c2d;
-  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+  text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5,
+    -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5,
+    -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5,
+    -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
 }
 
 .text-float {
-  text-shadow: 3px 5px 2px #474747, -40px -40px 2px rgba(206,89,55,0);
+  text-shadow: 3px 5px 2px #474747, -40px -40px 2px rgba(206, 89, 55, 0);
 }
 
 .item-container {
@@ -1588,18 +1591,18 @@ h6 {
 }
 
 #hero {
-  background-image: url('../images/balboa-7.jpg');
+  background-image: url("../images/balboa-7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   backgound-height: auto;
-  background-gradient: rgba(-180deg 0,0,0,.4)
+  background-gradient: rgba(-180deg 0, 0, 0, 0.4);
 }
 
 #breeding {
-  background-image: url('#../images/balboa-1.jpg');
-  background-repeat:no-repeat;
+  background-image: url("#../images/balboa-1.jpg");
+  background-repeat: no-repeat;
   background-scale: ;
-  background-position: center ;
+  background-position: center;
 }
 
 .bracket-img-c-row {
@@ -1607,15 +1610,15 @@ h6 {
   margin-bottom: -40px;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   #hero {
-    background-image: url('../images/balboa-1.jpg');
+    background-image: url("../images/balboa-1.jpg");
     background-position: center;
   }
 }
 
 #about-pg {
-  background-image: url('../images/balboa-5.jpg');
+  background-image: url("../images/balboa-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   backgound-width: fit;
@@ -1624,33 +1627,33 @@ h6 {
   background-attachment: fixed;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   #about-pg {
-    background-image: url('../images/balboa-1.jpg');
+    background-image: url("../images/balboa-1.jpg");
     background-position: center;
   }
 }
 
 #blog-pg {
-  background-image: url('../images/balboa-8.jpg');
+  background-image: url("../images/balboa-8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   backgound-width: fit;
   backgound-height: auto;
   position: realtive;
   background-attachment: fixed;
-  background-gradient: rgba(-180deg 0,0,0,.4)
+  background-gradient: rgba(-180deg 0, 0, 0, 0.4);
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   #blog-pg {
-    background-image: url('../images/balboa-1.jpg');
+    background-image: url("../images/balboa-1.jpg");
     background-position: center;
   }
 }
 
 #breeding {
-  background-image: url('../images/balboa-5.jpg');
+  background-image: url("../images/balboa-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   backgound-width: fit;
@@ -1739,7 +1742,7 @@ h6 {
   content: "\002B";
   font-size: 2rem;
   position: absolute;
-  right: .5rem;
+  right: 0.5rem;
   top: -0.58rem;
 }
 
@@ -1747,7 +1750,7 @@ h6 {
   content: "\2212";
 }
 
-.accordion-item-header.active + .accordion-item-body{
+.accordion-item-header.active + .accordion-item-body {
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
@@ -1782,35 +1785,39 @@ h6 {
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
 
-  #about-pg, #blog-pg, #breeding {
-    background:none;
+  #about-pg,
+  #blog-pg,
+  #breeding {
+    background: none;
   }
 
-  #about-pg:after, #blog-pg:after, #breeding:after  {
-    content:"";
-    position:fixed;
+  #about-pg:after,
+  #blog-pg:after,
+  #breeding:after {
+    content: "";
+    position: fixed;
     /* stretch a fixed position to the whole screen */
-    top:0;
-    height:100vh;
+    top: 0;
+    height: 100vh;
     /* fix for mobile browser address bar appearing disappearing */
-    left:0;
-    right:0;
-    z-index:-1;
+    left: 0;
+    right: 0;
+    z-index: -1;
     /* needed to keep in the background */
     background-position: center center;
     background-size: cover;
   }
 
-  #about-pg:after{
-    background-image: url('./images/balboa-1.jpg');
+  #about-pg:after {
+    background-image: url("./images/balboa-1.jpg");
   }
 
   #blog-pg:after {
-    background-image: url('./images/balboa-8.jpg');
+    background-image: url("./images/balboa-8.jpg");
   }
 
   #breeding:after {
-    background-image: url('./images/balboa-5.jpg');
+    background-image: url("./images/balboa-5.jpg");
   }
 }
 
