@@ -1629,7 +1629,7 @@ h6 {
 
 @media (max-width: 576px) {
   #about-pg {
-    background-image: url("../images/balboa-1.jpg");
+    background-image: url("../images/balboa-9.jpg");
     background-position: center;
   }
 }
@@ -1782,42 +1782,41 @@ h6 {
 
 /* iOS Mobile device images fix */
 
+/* take 2 */
+
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
 
-  #about-pg,
-  #blog-pg,
-  #breeding {
-    background: none;
+  #about-pg, #blog-pg, #breeding {
+    background:none;
   }
 
-  #about-pg:after,
-  #blog-pg:after,
-  #breeding:after {
-    content: "";
-    position: fixed;
+  #about-pg:after, #blog-pg:after, #breeding:after {
+    content:"";
+    position:fixed;
     /* stretch a fixed position to the whole screen */
-    top: 0;
-    height: 100vh;
+    top:0;
+    height:100vh;
     /* fix for mobile browser address bar appearing disappearing */
-    left: 0;
-    right: 0;
-    z-index: -1;
+    left:0;
+    right:0;
+    z-index:-1;
     /* needed to keep in the background */
     background-position: center center;
     background-size: cover;
   }
 
-  #about-pg:after {
-    background-image: url("./images/balboa-9.jpg");
+  #about-pg:after{
+    background-image: url('../images/balboa-9.jpg');
+    background-position: center top;
   }
 
   #blog-pg:after {
-    background-image: url("./images/balboa-8.jpg");
+    background-image: url('../images/balboa-8.jpg');
   }
 
   #breeding:after {
-    background-image: url("./images/balboa-5.jpg");
+    background-image: url('../images/balboa-5.jpg');
   }
 }
 
