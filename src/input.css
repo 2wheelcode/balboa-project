@@ -239,7 +239,7 @@
         height:100vh; /* fix for mobile browser address bar appearing disappearing */
         left:0;
         right:0;
-        z-index:-1; /* needed to keep in the background */
+        /* z-index:-1;  needed to keep in the background */
         background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
