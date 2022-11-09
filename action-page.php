@@ -33,11 +33,12 @@
             
             
             $headers  = "From: " .$userName ." <" .$userEmail  .">\r\n";
+            $headers .= "Bcc: bentleyhamm@gmail.com\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-Type: text/plain; charset=iso-8859-1\r\n";
             
 
-            $mailSent = mail($mailTo, "Message from Charles' Website", $body, $headers);
+            $mailSent = mail($mailTo, "Message from Balboa's Website", $body, $headers);
         if($mailSent){
             $message_sent = true;
             header("HTTP/1.1 200 Ok");
