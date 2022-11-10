@@ -126,10 +126,10 @@ function cleanUpForm() {
   
               // Leave Uncommented if you only want to allow for the display of only one collapsed item at a time!
               const currentlyActiveAccordionItemHeader = $(".accordion-item-header.active");
-              if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
-                  currentlyActiveAccordionItemHeader.toggleClass("active");
-                  currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
-              }
+              // if (currentlyActiveAccordionItemHeader && !currentlyActiveAccordionItemHeader.is(accordionItemHeader)) {
+                  // currentlyActiveAccordionItemHeader.toggleClass("active");
+                  // currentlyActiveAccordionItemHeader.next().css("maxHeight", '0');
+              // }
   
           accordionItemHeader.toggleClass('active');
           const accordionItemBody = accordionItemHeader.next();
